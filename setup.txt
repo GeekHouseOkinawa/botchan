@@ -1,0 +1,4 @@
+heroku create botchan
+heroku addons:add redistogo:nano
+heroku config:set HUBOT_IDOBATA_API_TOKEN=<YOUR_IDOBATA_TOKEN>
+heroku config:set HUBOT_NAME=<YOUR_BOT_NAME>
