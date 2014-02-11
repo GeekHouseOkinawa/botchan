@@ -1,0 +1,9 @@
+language: ruby
+script:
+- echo 'デプロイ!!'
+deploy:
+  provider: heroku
+  api_key:
+    secure: IKDMvlhBYvhy6Hazj4uwQ4e17OtcuSI9msOWHKOYquzkma/3oFd4WiTNo+jEUabQ83NiT8hHBJW+JfXTn5q3qqUGhFWDsLVtL5y3Zfz4MCL6Lmt2eTfjuCv0QIPjHA/MG6tw8w50XynZXp1WFBh+qmroHRQ9QRpazN5a3KImBPs=
+  app:
+    master: botchan
