@@ -8,3 +8,7 @@ deploy:
     secure: IKDMvlhBYvhy6Hazj4uwQ4e17OtcuSI9msOWHKOYquzkma/3oFd4WiTNo+jEUabQ83NiT8hHBJW+JfXTn5q3qqUGhFWDsLVtL5y3Zfz4MCL6Lmt2eTfjuCv0QIPjHA/MG6tw8w50XynZXp1WFBh+qmroHRQ9QRpazN5a3KImBPs=
   app:
     master: botchan
+
+notifications:
+  webhooks:
+    - https://idobata.io/hook/0698837d-d0a4-40a2-a1fa-37b7737977f1
