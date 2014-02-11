@@ -1,6 +1,7 @@
 language: ruby
-script:
-- echo 'デプロイ!!'
+
+script: echo 'deploy!!'
+
 deploy:
   provider: heroku
   api_key:
