@@ -8,12 +8,12 @@
 #   None
 #
 # Commands:
-#   hubot unko   ( ◠‿◠ ) unko ♡
-#   hubot unko N ( ◠‿◠ ) unko unko ... ♡
+#   hubot unko    ( ◠‿◠ ) unko ♡
+#   hubot unkox N ( ◠‿◠ ) unko unko ... ♡
 
 module.exports = (robot) ->
 
-  robot.respond /unko (\d+)/i, (msg) ->
+  robot.respond /unkox (\d+)/i, (msg) ->
     msg.send (':poop:' for _ in [1..+msg[1]]).join(' ')
 
   robot.respond /unko/i, (msg) ->
