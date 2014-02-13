@@ -10,7 +10,7 @@
 # Commands:
 #   hubot tiqav <phrae> - ( ◠‿◠ )
 
-_  = require("underscore")
+_ = require("underscore")
 
 module.exports = (robot) ->
 
@@ -18,4 +18,4 @@ module.exports = (robot) ->
     msg.http("http://api.tiqav.com/search.json")
       .query(q: msg.match[1])
       .get() (err, res, body) ->
-         msg.send u if u = _.shuffle(JSON.parse(body))[0]?.source_url
+         msg.send "http://img.tiqav.com/#{id}.th.jpg" if id = _.shuffle(JSON.parse(body))[0]?.id
