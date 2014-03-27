@@ -22,7 +22,9 @@
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
-    "hubot-idobata": "0.0.2"
+    "hubot-idobata": "0.0.2",
+    "cheerio": "0.x",
+    "request": ">= 2.x"
   },
   "engines": {
     "node": ">= 0.8.x",
