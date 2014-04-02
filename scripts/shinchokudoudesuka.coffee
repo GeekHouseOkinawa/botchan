@@ -16,7 +16,7 @@ _ = require("underscore")
 
 module.exports = (robot) ->
 
-  robot.respond /shinchoku/i, (msg) ->
+  robot.respond /(shinchoku|sh)/i, (msg) ->
     msg.http('http://api.tumblr.com/v2/blog/shinchokudodesuka.tumblr.com/posts/photo')
       .query(type: 'photo', api_key: process.env.TUMBLR_API_KEY)
       .get() (err, res, body) ->
