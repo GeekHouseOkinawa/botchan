@@ -24,7 +24,7 @@ module.exports = (robot) ->
         return unless r?.meta?.status? && r?.response?.posts?[0]?
 
         url = _.chain(r.response.posts)
-          .map((post) -> post.photos?.alt_sizes?[0]?.url)
+          .map((post) -> _.map(post.photos, (p) -> p.alt_sizes?[0]?.url))
           .flatten()
           .compact()
           .shuffle()
