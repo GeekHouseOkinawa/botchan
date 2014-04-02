@@ -21,7 +21,7 @@ module.exports = (robot) ->
       .query(type: 'photo', api_key: process.env.TUMBLR_API_KEY)
       .get() (err, res, body) ->
         r = JSON.parse(body)
-        return unless r?.status? && r?.response?.posts?[0]?
+        return unless r?.meta?.status? && r?.response?.posts?[0]?
 
         url = _.chain(r.response.posts)
           .map((post) -> post.photos?.alt_sizes?[0]?.url)
