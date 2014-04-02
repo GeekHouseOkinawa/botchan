@@ -25,6 +25,7 @@ module.exports = (robot) ->
 
         url = _.chain(r.response.posts)
           .map((post) -> post.photos?.alt_sizes?[0]?.url)
+          .flatten()
           .compact()
           .shuffle()
           .first()
