@@ -10,7 +10,7 @@
 #   None
 #
 # Commands:
-#   shinchoku    ( ◠‿◠ ) 進捗どうですか ♡
+#   hubot shinchoku    ( ◠‿◠ ) 進捗どうですか ♡
 
 _ = require("underscore")
 
